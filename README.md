@@ -31,11 +31,11 @@ Ultimately, we could run the python code without errors. However, the result is 
 As stated above, due to the nature of DUET we had to recreate/crawl the GitHub again at this time to gain an output, thus we had to fix the crawler part and the [achieved output](https://github.com/AliVn85/MSR-Assignment2-/blob/main/runner/output.json) was gained. However, the output does not include sufficient data for further analysis. [The output from the paper](https://github.com/castor-software/Duets#format) includes features like "groupId", "artifactId", "commit", etc., whereas the one we received from the Runner script consists of one Entry that has "commit", and "test_results" in the JSON file.
 
 For more details, we provided the below image. As you can see, the docker code unfortunately and unexpectedly has critical errors which we tried to resolve as described above; The syntax had a critical error (1), the 1st argument was totally different (2), and the unknown unsolved error of Docker (3) using the Compile keyword that wasted an enormous amount of our time.
-![enter image description here](https://github.com/AliVn85/MSR-Assignment2-/blob/main/Some%20paper%20errors.png?raw=true)
+![enter image description here](https://github.com/AliVn85/MSR-Assignment2-/blob/main/Data%20folder/Some%20paper%20errors.png?raw=true)
 ### 2nd Output:
 Fixing the errors from the paper led to abandoning the Docker option and directly using Python in windows using VS Code, which made it possible to get [the other output](https://github.com/AliVn85/MSR-Assignment2-/blob/main/runner/output.txt) from JaCOP- a Python framework mentioned in the paper.
 Speaking of VS Code, we were able to get more details in the terminal as well - image below.
-![enter image description here](https://github.com/AliVn85/MSR-Assignment2-/blob/main/VS%20Code%20output.jpg?raw=true)
+![enter image description here](https://github.com/AliVn85/MSR-Assignment2-/blob/main/Data%20folder/VS%20Code%20output.jpg?raw=true)
 
 ## Implementation of reproduction
 ### Hardware requirements:
