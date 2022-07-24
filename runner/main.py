@@ -99,3 +99,6 @@ if __name__ == "__main__":
         #     project.copy_jacoco(args.output)
     output['test_results'].append(readTestResults(project.path))
     print(json.dumps(output))
+    f = open("output.json", "w+")
+    f.write(json.dumps(output))
+    f.close()
